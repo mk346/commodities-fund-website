@@ -81,19 +81,19 @@
     <form id="appointmentForm" action="includes/save_appointment.php" method="POST">
       <div>
         <label for="name" class="form-label">Name:</label>
-        <input type="text" id="name" class="form-control" required>
+        <input type="text" name="fname" id="name" class="form-control" required>
       </div>
       <div>
         <label for="email" class="form-label">Email:</label>
-        <input type="email" id="email" class="form-control" required>
+        <input type="email" name="email" id="email" class="form-control" required>
       </div>
       <div>
         <label for="phone" class="form-label">Phone:</label>
-        <input type="tel" id="phone" class="form-control" required>
+        <input type="tel" name="phone" id="phone" class="form-control" required>
       </div>
       <div>
         <label for="dayOfWeek" class="form-label">Day of the Week:</label>
-        <select id="dayOfWeek" class="form-control" required>
+        <select id="dayOfWeek" name="day" class="form-control" required>
           <option value="" disabled selected>Select a day</option>
           <option value="Monday">Monday</option>
           <option value="Tuesday">Tuesday</option>
@@ -104,11 +104,11 @@
       </div>
       <div>
         <label for="appointmentDate" class="form-label">Appointment Date:</label>
-        <input type="date" id="appointmentDate" class="form-control" required>
+        <input type="date" name="app_date" id="appointmentDate" class="form-control" required>
       </div>
       <div>
         <label for="appointmentTime" class="form-label">Appointment Time:</label>
-        <select id="appointmentTime" class="form-control" required>
+        <select id="appointmentTime" name="app_time" class="form-control" required>
           <option value="" disabled selected>Select a time</option>
           <option value="8:00 AM">8:00 AM</option>
           <option value="9:00 AM">9:00 AM</option>
@@ -123,7 +123,7 @@
       <!-- Add Preferred Branch -->
       <div>
         <label for="preferredBranch" class="form-label">Preferred Branch:</label>
-        <select id="preferredBranch" class="form-control" required>
+        <select id="preferredBranch" name="branch" class="form-control" required>
           <option value="" disabled selected>Select a branch</option>
           <option value="Nairobi">Nairobi</option>
           <option value="Eldoret">Eldoret</option>
