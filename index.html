@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commodities Fund</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#appointment">Book an Appointment</a></li>
+      <li><a href="#contacts">Contacts and Location</a></li>
+      <li><a href="#inquiries">Inquiries</a></li> <!-- Add the Inquiries link -->
+    </ul>
+  </nav>
+
+  <!-- Home Page Content -->
+  <section id="home" class="page active">
+    <div class="banner">
+      <img src="company_banner.jpg.jpg" alt="Company Banner">
+    </div>
+    <div class="home-content">
+      <h1>Welcome to Commodities Fund</h1>
+      <p>
+        At Commodities Fund, we cultivate more than just crops; we nurture dreams, aspirations, and a prosperous future for farmers like you. With our sustainable and affordable credit solutions, your farming journey is set to flourish like never before.
+
+        We believe that every seed you plant holds the potential for a bountiful harvest, and we are here to ensure you have the resources to bring your agricultural ambitions to life. Whether you're a small-scale farmer with big dreams or a seasoned producer looking to expand your horizons, our expert team is dedicated to supporting your growth at every step.
+
+        As you navigate through our website, you'll discover a wealth of resources, valuable insights, and innovative financing options tailor-made for the modern-day farmer. From farm improvements to price stabilization and beyond, we stand by you as a trusted partner, your success intertwined with ours.
+
+        Join us on this journey to prosperity as we sow the seeds of tomorrow, grow together, and reap the rewards of your hard work. Together, we cultivate not only crops but a stronger, more resilient agricultural community.
+
+        Get ready to cultivate greatness – Your farm, our commitment. Let's bloom together!
+      </p>
+    </div>
+  </section>
+
+  <!-- About Us Page Content -->
+  <section id="about" class="page">
+    <h2>About Us</h2>
+    <div class="about-content">
+      <h3>Mission</h3>
+      <p>
+        To DEVELOP Crops sector through providing affordable and accessible credit and advances for increased
+        productivity and production, value addition and increased producer income.
+      </p>
+
+      <h3>Our Clientele</h3>
+      <ul>
+        <li>Producers (Small and large scale farmers)</li>
+        <li>Producers’ institutions (Cooperatives, Unions, factories, SACCOs, Out-grower companies)</li>
+        <li>Private and government institutions</li>
+        <li>Service Providers for scheduled Crops (processors, Marketers, transporters, exporters, distributors, et cetera.)</li>
+      </ul>
+
+      <h3>Core Values</h3>
+      <ul>
+        <li>Customer Focus</li>
+        <li>Innovativeness</li>
+        <li>Professionalism</li>
+        <li>Integrity</li>
+        <li>Teamwork</li>
+      </ul>
+
+      <h3>Motto</h3>
+      <p>“Financing Crops Sector for Prosperity”</p>
+    </div>
+  </section>
+
+  <!-- Book an Appointment Page Content -->
+  <section id="appointment" class="page">
+    <h2>Book an Appointment</h2>
+    <form id="appointmentForm" action="includes/save_appointment.php" method="POST">
+      <div>
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" id="name" class="form-control" required>
+      </div>
+      <div>
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" id="email" class="form-control" required>
+      </div>
+      <div>
+        <label for="phone" class="form-label">Phone:</label>
+        <input type="tel" id="phone" class="form-control" required>
+      </div>
+      <div>
+        <label for="dayOfWeek" class="form-label">Day of the Week:</label>
+        <select id="dayOfWeek" class="form-control" required>
+          <option value="" disabled selected>Select a day</option>
+          <option value="Monday">Monday</option>
+          <option value="Tuesday">Tuesday</option>
+          <option value="Wednesday">Wednesday</option>
+          <option value="Thursday">Thursday</option>
+          <option value="Friday">Friday</option>
+        </select>
+      </div>
+      <div>
+        <label for="appointmentDate" class="form-label">Appointment Date:</label>
+        <input type="date" id="appointmentDate" class="form-control" required>
+      </div>
+      <div>
+        <label for="appointmentTime" class="form-label">Appointment Time:</label>
+        <select id="appointmentTime" class="form-control" required>
+          <option value="" disabled selected>Select a time</option>
+          <option value="8:00 AM">8:00 AM</option>
+          <option value="9:00 AM">9:00 AM</option>
+          <option value="10:00 AM">10:00 AM</option>
+          <option value="11:00 AM">11:00 AM</option>
+          <option value="12:00 PM">12:00 PM</option>
+          <option value="2:00 PM">2:00 PM</option>
+          <option value="3:00 PM">3:00 PM</option>
+          <option value="4:00 PM">4:00 PM</option>
+        </select>
+      </div>
+      <!-- Add Preferred Branch -->
+      <div>
+        <label for="preferredBranch" class="form-label">Preferred Branch:</label>
+        <select id="preferredBranch" class="form-control" required>
+          <option value="" disabled selected>Select a branch</option>
+          <option value="Nairobi">Nairobi</option>
+          <option value="Eldoret">Eldoret</option>
+          <option value="Nakuru">Nakuru</option>
+        </select>
+      </div>
+      <input type="submit" class="btn btn-primary" name="save" value="Book">
+    </form>
+    <div id="error"></div>
+    <div id="successMessage"></div> <!-- Add the success message element -->
+  </section>
+
+  <!-- Contacts and Location Page Content -->
+  <section id="contacts" class="page">
+    <h2>Contacts and Location</h2>
+    <div class="contact-info">
+      <h3>Address</h3>
+      <p>Utalii House – 11th Floor, Utalii Lane, off Uhuru Highway</p>
+
+      <h3>Phone Number</h3>
+      <p>0728 602427</p>
+
+      <h3>Email Address</h3>
+      <p>info@comfund.co.ke</p>
+
+      <h3>Hours of Operation</h3>
+      <p>8 am to 5 pm</p>
+
+      <!-- Add the image here -->
+      <img src="contacts_location_image.jpg" alt="Contacts and Location Image">
+    </div>
+  </section>
+
+  <!-- Inquiries Page Content -->
+  <section id="inquiries" class="page">
+    <h2>Inquiries</h2>
+    <p>If you have any questions or comments, feel free to reach out to us. Please fill out the form below, and we'll get back to you as soon as possible.</p>
+    <p>We value your feedback and look forward to hearing from you!</p> <!-- Add the new text here -->
+    <form id="inquiryForm">
+      <div>
+        <label for="inquiryName">Name:</label>
+        <input type="text" id="inquiryName" required>
+      </div>
+      <div>
+        <label for="inquiryEmail">Email:</label>
+        <input type="email" id="inquiryEmail" required>
+      </div>
+      <div>
+        <label for="inquiryMessage">Message:</label>
+        <textarea id="inquiryMessage" rows="4" required></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <div id="inquiryError"></div>
+    <div id="inquirySuccessMessage"></div> <!-- Add the success message element -->
+  </section>
+
+  <script src="script.js"></script>
+  
+
+</body>
+</html>

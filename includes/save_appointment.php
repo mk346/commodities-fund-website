@@ -1,0 +1,8 @@
+<?php
+//declare variables
+$name = "";
+
+
+
+
+?>

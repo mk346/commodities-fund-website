@@ -1,0 +1,187 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: green;
+  font-size: 20px; /* Make the words one size bigger */
+  background-color: rgb(253, 255, 253);
+}
+
+nav {
+  background-color: green;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 10;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+/* Add spacing between sections */
+section {
+  padding: 20px;
+  margin: 0px 0;
+}
+
+/* Hide all sections except the active one */
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+/* Style the form for "Book an Appointment" */
+#appointmentForm {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+#appointmentForm div {
+  margin-bottom: 10px;
+}
+
+#appointmentForm label {
+  display: block;
+  font-weight: bold;
+}
+
+#appointmentForm input {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+}
+
+#bookButton {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Add a background image to the "About Us" section */
+#about {
+  background-image: url("about_background.jpg.jpg");
+  background-size: contain;
+  background-position: center;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+/* Style the home page banner image */
+.banner img {
+  max-width: 100%;
+}
+
+/* Add spacing for home and about sections */
+.home-content, .about-content {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+/* Style the About Us section content */
+.about-content ul, .about-content p {
+  margin: 10px 0;
+}
+
+/* Style the contact information */
+.contact-info {
+  text-align: center;
+}
+
+.contact-info h3 {
+  margin-top: 20px;
+}
+
+/* Style the "Appointment booked successfully" message */
+#successMessage {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Style the error message in red */
+#error, #errorMessage {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Style the form for "Inquiries" */
+#inquiryForm {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid green;
+  border-radius: 5px;
+}
+
+#inquiryForm div {
+  margin-bottom: 10px;
+}
+
+#inquiryForm label {
+  display: block;
+  font-weight: bold;
+}
+
+#inquiryForm input,
+#inquiryForm textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 20px;
+}
+
+#inquiryForm textarea {
+  resize: vertical; /* Allow vertical resizing of the textarea */
+}
+
+#inquiryButton {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Style the "Inquiry sent successfully" message */
+#inquirySuccessMessage {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Style the inquiry error message in red */
+#inquiryError {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
